@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Something Weird</title>
+        <link rel="stylesheet" type="text/css" href="index.css">
+    </head>
+    <body>
+        <div id="root">
+            <form action="" method="dialog">
+                <ul>
+                    <li>
+                        <label for="name">
+                            <h1>Enter your name!</h1>
+                        </label>
+                    </li>
+                    <li>
+                        <input id="name" name="username" type="text"></input>
+                    </li>
+                    <li>
+                        <input id="submit" type="submit" value="Submit"></input>
+                    </li>
+                </ul>
+            </form>
+        </div>
+    </body>
+    <script>
+        document.querySelector("form").addEventListener("submit", (e) => {
+            let username = document.forms[0].username.value;
+
+            alert("Hello, " + username + "!");
+        });
+    </script>
+</html>

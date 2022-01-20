@@ -1,0 +1,57 @@
+* { /* reset default margin/padding */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    padding-top: 15vh;
+    background-color: rgb(91, 58, 238);
+}
+
+#root {
+    background-color: aliceblue;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin: 5%;
+    padding: 5%;
+    box-shadow: 0.5em 0.5em rgb(31, 20, 83);
+}
+
+ul {
+   list-style-type: none;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+ul li {
+    display: list-item;
+    margin: 3pt 0;
+}
+
+h1 {
+    color: aliceblue;
+    padding: 00.5em;
+    background-color: rgb(31, 20, 83);
+    box-shadow: 0.25em 0.25em rgb(176, 182, 187);
+}
+
+#name, #submit {
+    width: 50vw;
+    margin: 0.5rem;
+    padding: 0.5em;
+    left: 0;
+    right: 0;
+    box-shadow: 0.25em 0.25em rgb(176, 182, 187);
+} 
+
+
+footer {
+    position: fixed;
+    justify-self: center;
+    margin: auto;
+}
+
